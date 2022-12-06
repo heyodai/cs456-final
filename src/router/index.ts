@@ -6,21 +6,38 @@ Vue.use(VueRouter)
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'home',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ProjectView.vue')
+    name: 'Inbox',
+    component: () => import(/* webpackChunkName: "about" */ '../views/InboxView.vue')
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/scheduled',
+    name: 'Scheduled',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ScheduledView.vue')
+  },
+  {
+    path: '/flagged',
+    name: 'Flagged',
+    component: () => import(/* webpackChunkName: "about" */ '../views/FlaggedView.vue')
   },
   {
     path: '/groceries',
     name: 'Groceries',
     component: () => import(/* webpackChunkName: "about" */ '../views/GroceriesView.vue')
+  },
+  {
+    path: '/reminders',
+    name: 'Reminders',
+    component: () => import(/* webpackChunkName: "about" */ '../views/RemindersView.vue')
+  },
+  {
+    path: '/kitchen',
+    name: 'Kitchen Remodel',
+    component: () => import(/* webpackChunkName: "about" */ '../views/KitchenRemodelView.vue')
+  },
+  {
+    path: '/vacation',
+    name: 'Vacation',
+    component: () => import(/* webpackChunkName: "about" */ '../views/VacationView.vue')
   },
 ]
 

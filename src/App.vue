@@ -4,7 +4,7 @@
   <v-app>
     <v-navigation-drawer app v-model="show_drawer" clipped>
       <v-list dense nav>
-        <v-list-item v-for="item in items_first" :key="item.title" link>
+        <v-list-item v-for="item in items_first" :key="item.title" link :to="item.href">
           <v-list-item-icon>
             <v-icon :color="item.color">{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -92,9 +92,9 @@ export default Vue.extend({
   data() {
     return {
       items_first: [
-        { title: 'Inbox', icon: 'mdi-inbox', color: "green" },
-        { title: 'Scheduled', icon: 'mdi-clock-outline', color: "orange" },
-        { title: 'Flagged', icon: 'mdi-flag', color: "red" },
+        { title: 'Inbox', icon: 'mdi-inbox', color: "green", href: '/' },
+        { title: 'Scheduled', icon: 'mdi-clock-outline', color: "orange", href: 'scheduled' },
+        { title: 'Flagged', icon: 'mdi-flag', color: "red", href: 'flagged' },
         // { title: 'Due Today', icon: 'mdi-calendar-today', color: "blue" },
       ],
       items_second: [

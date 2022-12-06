@@ -6,6 +6,7 @@
 
 import Vue from "vue"
 
+
 const store = Vue.observable({
     tasks: [{ "id": 1, "due_date": null, "description": "transform one-to-one vortals", "is_flaged": null, "project": "vacation" },
     { "id": 2, "due_date": null, "description": "innovate dynamic partnerships", "is_flaged": null, "project": "inbox" },
