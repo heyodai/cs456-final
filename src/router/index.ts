@@ -39,6 +39,11 @@ const routes: Array<RouteConfig> = [
     name: 'Vacation',
     component: () => import(/* webpackChunkName: "about" */ '../views/VacationView.vue')
   },
+  {
+    path: '/accessibility',
+    name: 'Accessibility',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AccessibilityView.vue')
+  }
 ]
 
 const router = new VueRouter({

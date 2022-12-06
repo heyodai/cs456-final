@@ -39,12 +39,12 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
+      <v-btn icon to="/accessibility">
+        <v-icon>mdi-wheelchair-accessibility</v-icon>
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon>mdi-theme-light-dark</v-icon>
       </v-btn>
 
       <v-menu left bottom>
