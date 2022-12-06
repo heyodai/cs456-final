@@ -19,7 +19,7 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: '/groceries',
-    name: 'groceries',
+    name: 'Groceries',
     component: () => import(/* webpackChunkName: "about" */ '../views/GroceriesView.vue')
   },
 ]

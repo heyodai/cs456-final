@@ -20,7 +20,7 @@
       <v-list dense nav>
         <v-subheader>Projects</v-subheader>
 
-        <v-list-item v-for="item in items_second" :key="item.title" link :href="item.href">
+        <v-list-item v-for="item in items_second" :key="item.title" link :to="item.href">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
