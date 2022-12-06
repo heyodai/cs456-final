@@ -40,11 +40,11 @@
       <v-spacer></v-spacer>
 
       <v-btn icon>
-        <v-icon>mdi-palette</v-icon>
+        <v-icon>mdi-heart</v-icon>
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-contrast-circle</v-icon>
+        <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
       <v-menu left bottom>
@@ -84,7 +84,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// import store from './store'
 
 export default Vue.extend({
   name: 'App',
